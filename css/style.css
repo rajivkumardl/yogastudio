@@ -1,0 +1,605 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 1px;
+}
+
+h1,h2,h3,h4,h5,h6,p,figure{
+	margin: 0;
+}
+
+html{
+    font-size: 15px;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header-top {
+    padding: 15px 0;
+    align-items: center;
+}
+
+.logo {
+    width: 40%;
+}
+
+.logo a {
+    color: #a2a2a2;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+    width: 60%;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #565656;
+    font-size: 1.2rem;
+}
+
+/* mobile menu starts */
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu i {
+    font-size: 20px;
+    color: #000;
+}
+
+/* mobile menu ends */
+
+.banner{
+    background-color: #f29be9;
+    background-image: linear-gradient(160deg, #f29be9 29%, #8c81f7 94%);
+}
+
+.yoga-studio {
+    align-items: center;
+}
+
+.banner-text {
+    width: 50%;
+    padding: 100px 0;
+}
+
+.banner-img {
+    width: 45%;
+}
+
+img {
+    width: 100%;
+}
+
+.heading {
+    color: #fff;
+    font-size: 4rem;
+    text-transform: capitalize;
+    position: relative;
+    padding-bottom: 25px;
+}
+
+.heading:after {
+    position: absolute;
+    content: "";
+    border-bottom: 10px solid #fff;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.text {
+    color: #fff;
+    padding: 2rem 0;
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+
+.my-button {
+    padding: 17px 25px;
+    border: 2px solid #fff;
+    background: 0;
+    border-radius: 30px;
+}
+
+.my-button a {
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+/* header ends here */
+
+/* service starts */
+
+.service-bg {
+    background: #292d33;
+}
+
+.service {
+    position: relative;
+    top: -70px;
+}
+
+.service-box {
+    background: #fff;
+    width: 23%;
+    height: 246px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-iceon img {
+    width: 88px;
+    height: 88px;
+    background: #8981fa;
+    border-radius: 100%;
+}
+
+.service-box h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    color: #111111;
+}
+
+/* service ends */
+
+/* about us starts */
+
+#about {
+    background: #e43b76;
+}
+
+.inner {
+    padding: 75px 0;
+}
+
+.v-text {
+    width: 30%;
+}
+
+.v-text h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+
+.v-text h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.v-text p {
+    color: #fff;
+    line-height: 25px;
+    font-size: 15px;
+    margin-bottom: 2rem;
+}
+
+.v-text h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* fitness */
+
+.fitness-bg {
+    background: #292d33;
+}
+
+.fitness-container {
+    position: relative;
+    align-items: center;
+}
+
+.fitness-img {
+    width: 60%;
+    height: 500px;
+}
+
+.fitness-img img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.fitness-text-right {
+    width: 50%;
+    height: 358px;
+    background: #e43b76;
+    padding: 30px;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fitness-text-right h2 {
+    color: #fff;
+    font-size: 1.8rem;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.fitness-text-right h2:after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 15%;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+}
+
+/* Per-training starts */
+
+.Per-training{
+    background: linear-gradient(to top right, #8879f8 0%, #ffa3d4 75%);
+    position: relative;
+    padding: 120px 0;
+}
+
+.training-container {
+    align-items: center;
+}
+
+.training {
+    width: 50%;
+}
+
+.Per-training-img {
+    width: 47%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+.Per-training-img img {
+    height: 100%;
+    /*object-fit: cover;*/
+}
+
+/* training-appointment starts */
+
+.training-appointment {
+    background: #292d33;
+}
+
+.tra-heading {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.tra-heading h2 {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.tra-img-left {
+    width: 40%;
+    height: 530px;
+}
+
+.tra-img-left img {
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.tra-content {
+    width: 30%;
+    background: #e43b76;
+    align-items: center;
+}
+
+.sports {
+    padding: 30px;
+}
+
+.sports h4 {
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.sports ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.sports ul li {
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 6px 0;
+}
+
+.tra-img-right {
+    width: 30%;
+    height: 530px;
+}
+
+.tra-img-right img {
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+/* training-appointment ends */
+
+/* functional appointment starts */
+
+.fun-training{
+    background-color: #9a77f7;
+background-image: linear-gradient(136deg, #9a77f7 0%, #fcacdc 62%, #9a77f7 100%);
+
+}
+
+.fun-training-img {
+    width: 47%;
+    height: 560px;
+}
+
+.fun-training-img img {
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.fun-training-right {
+    width: 50%;
+}
+
+/* footer starts */
+
+footer {
+    text-align: center;
+    background: #000000;
+    color: #fff;
+}
+
+.footer-section {
+    padding-top: 4rem;
+}
+
+.footer-logo {
+    width: 100%;
+}
+
+.contact {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.contact-text {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #fff;
+    margin-bottom: 18px;
+}
+
+.contact p span {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.footer-img {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.footer-logo {
+    width: 100%;
+    padding-top: 7rem;
+}
+
+.footer-logo a {
+    font-size: 45px;
+}
+
+.social-icon {
+    padding: 20px 0;
+    border-bottom: 1px solid #727272;
+}
+
+.social-icon i {
+    padding: 10px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.copyright {
+    padding: 2rem 0;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+
+
+/* media query starts */
+
+@media (max-width: 992px){
+    .container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+
+
+@media (max-width: 768px){
+    html{
+        font-size: 12px;
+    }
+    .menu {
+    display: none;
+    position: absolute;
+    top: 57px;
+    background: blue;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    z-index: 2;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+    .menu li{
+        padding-bottom: 8px;
+    }
+    .menu li a {
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+    .mobile-menu{
+        display: block;
+    }
+    /*.yoga-studio{
+        padding-bottom: 50px;
+    }*/
+    .service-box{
+        width: 48%;
+        margin-bottom: 4%;
+    }
+    .fitness-service, .gym-service{
+        margin-bottom: 0;
+    }
+    .fitness-text-right {
+        margin-right: 30px;
+    }
+    .training{
+        width: 39%;
+    }
+    .fun-training-img img {
+        object-fit: fill;
+    }
+    .Per-training-img{
+        width: 60%;
+    }
+    .tra-img-left, .tra-content{
+        width: 50%;
+    } 
+    .tra-img-right{
+        width: 100%;
+    }
+    .fun-training-right .heading{
+        font-size: 3rem;
+    }
+}
+
+
+@media (max-width: 600px){
+    .banner-text, .banner-img, .service-box{
+        width: 100%;
+    }
+    .banner-text{
+        padding: 30px 0;
+    }
+    .service-box{
+        margin-bottom: 30px;
+    }
+    .service-box:last-child{
+        margin-bottom: 0;
+    }
+    .v-text{
+        width: 100%;
+    }
+    .v-text h1{
+        font-size: 2rem;
+    }
+    .v-text-center{
+        margin: 35px 0;
+    }
+    .fitness-img {
+        width: 100%;
+    }
+    .fitness-text-right {
+    width: 90%;
+    position: relative;
+    height: 100%;
+    margin-right: 0;
+    transform: translate(6%, -15%);
+}
+.Per-training{
+    padding: 0;
+}
+.training-container {
+    padding-right: 0;
+    padding-top: 30px;
+}
+.training {
+    width: 100%;
+    padding-right: 30px;
+}
+.Per-training-img{
+    width: 100%;
+    position: relative;
+}
+.tra-heading{
+    width: 100%;
+    margin: 0;
+}
+.tra-img-left, .tra-content, .sports{
+    width: 100%;
+}
+.tra-content{
+    flex-direction: column;
+}
+.fun-training-img {
+    width: 100%;
+    order: 1;
+}
+.fun-training-right{
+    width: 100%;  
+}
+.fun-training-img img {
+        object-fit: cover;
+        object-position: 50% 0;
+    }
+.contact, .footer-img{
+    width: 100%;
+}
+
+}
